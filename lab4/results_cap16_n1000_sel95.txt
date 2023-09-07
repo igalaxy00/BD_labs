@@ -1,0 +1,74 @@
+
+Results (Cached) with: cache_cap = 16, select_chance = 0.95, n_requests = 1000
+
+Delete unused stations:
+	min_time = 7.223569ms
+	max_time = 10.959277ms
+	avg_time = 8.058721ms
+Select all route sections:
+	min_time = 9.962µs
+	max_time = 12.991033ms
+	avg_time = 739.28µs
+Select all routes:
+	min_time = 6.49µs
+	max_time = 1.317188ms
+	avg_time = 58.986µs
+Select all stations:
+	min_time = 5.485µs
+	max_time = 946.103µs
+	avg_time = 74.138µs
+Select route sections with cost more than:
+	min_time = 11.327µs
+	max_time = 10.606348ms
+	avg_time = 4.247634ms
+Select routes with latitude more than:
+	min_time = 6.322µs
+	max_time = 1.898808ms
+	avg_time = 628.642µs
+Update route sections cost:
+	min_time = 12.273394ms
+	max_time = 20.79101ms
+	avg_time = 14.278586ms
+Update stations location:
+	min_time = 1.618693ms
+	max_time = 8.959176ms
+	avg_time = 3.764333ms
+
+
+
+Results (Uncached) with: select_chance = 0.95, n_requests = 1000
+
+Delete unused stations:
+	min_time = 6.915636ms
+	max_time = 10.035768ms
+	avg_time = 7.962702ms
+Select all route sections:
+	min_time = 6.619297ms
+	max_time = 14.406474ms
+	avg_time = 7.302047ms
+Select all routes:
+	min_time = 811.576µs
+	max_time = 2.544915ms
+	avg_time = 1.117894ms
+Select all stations:
+	min_time = 374.522µs
+	max_time = 1.432213ms
+	avg_time = 633.215µs
+Select route sections with cost more than:
+	min_time = 6.81879ms
+	max_time = 13.368669ms
+	avg_time = 7.480124ms
+Select routes with latitude more than:
+	min_time = 539.265µs
+	max_time = 2.522779ms
+	avg_time = 1.072273ms
+Update route sections cost:
+	min_time = 12.176097ms
+	max_time = 20.387393ms
+	avg_time = 15.027237ms
+Update stations location:
+	min_time = 1.760193ms
+	max_time = 8.945806ms
+	avg_time = 3.463981ms
+
+

@@ -1,0 +1,42 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.20'
+    id 'application'
+}
+
+
+version = '0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains.exposed:exposed-core:0.37.3'
+    implementation 'org.jetbrains.exposed:exposed-jdbc:0.37.3'
+    implementation 'org.jetbrains.exposed:exposed-kotlin-datetime:0.37.3'
+    implementation('org.postgresql:postgresql:42.3.3')
+
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.3.2")
+
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+
+    implementation 'io.github.serpro69:kotlin-faker:1.10.0'
+
+    implementation("org.jetbrains.kotlinx:kotlinx-cli:0.3.4")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
+
+application {
+    mainClassName = 'MainKt'
+}
